@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: teal;
+}
+
+body {
+    height: inherit;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+h1,
+p {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 24px;
+    color: aliceblue;
+}
+
+div p {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: azure;
+}
+
+button {
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media all and (max-height: 410px) {
+    div {
+        position: static;
+    }
+}
+
+.phrase {
+    font-weight: bold;
+}
+
+.output {
+    font-style: italic;
+}
