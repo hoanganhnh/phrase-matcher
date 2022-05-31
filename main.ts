@@ -60,6 +60,11 @@ function testSpeech() {
         "#JSGF V1.0; grammar phrase; public <phrase> = " + phrase + ";";
     const recognition = new SpeechRecognition();
     const speechRecognitionList = new SpeechGrammarList();
+    /**
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/SpeechGrammarList/addFromString
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/interimResults
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/maxAlternatives
+     */
     speechRecognitionList.addFromString(grammar, 1);
     recognition.grammars = speechRecognitionList;
     // vietnamese lang code
